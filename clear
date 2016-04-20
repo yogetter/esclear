@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+#
+while read line
+do
+        arg[$i]="$line"
+        i=$(($i+1))
+done < config.cnf
+#get path
+IFS==
+#get run date
+now=$(date +%s)
+del_date_ms=$(($now-15552000))
+del_date=$(date --date=@$del_date_ms +%Y.%m.%d)
+echo $del_date
+#curl -u ${arg[5]}:${arg[6]} -X DELETE ${arg[7]}/*-$del_date?pretty
