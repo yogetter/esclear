@@ -1,0 +1,8 @@
+# Please Set Four Argument:
+# user: es_user
+# password: es_passwd
+# url: http://es_url:port
+#!!!!!!!!DO NOT add any line in this file!!!!!!!!
+es_admin
+es_admin
+http://ip:9200
